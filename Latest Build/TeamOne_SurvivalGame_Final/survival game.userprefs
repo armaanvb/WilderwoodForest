@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\CharacterController\PlayerStats.cs">
+    <Files>
+      <File FileName="Assets\Script\ItemSpawner&amp;Counter\Scripts\ItemDurability.cs" Line="14" Column="73" />
+      <File FileName="Assets\Script\CharacterController\PlayerStats.cs" Line="70" Column="51" />
+      <File FileName="Assets\Script\FoodWaterBuff\FoodScript.cs" Line="26" Column="4" />
+      <File FileName="Assets\Script\FoodWaterBuff\WaterScript.cs" Line="41" Column="27" />
+      <File FileName="Assets\Script\RandomSpawner\Script\RandomSpawn.cs" Line="22" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

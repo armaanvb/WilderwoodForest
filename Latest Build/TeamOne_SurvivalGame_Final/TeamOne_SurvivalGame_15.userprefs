@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ItemSpawner&amp;Counter\Scripts\ItemDurability.cs">
+    <Files>
+      <File FileName="Assets\Script\CharacterController\meleestate.cs" Line="60" Column="3" />
+      <File FileName="Assets\Script\CharacterController\gunstate.cs" Line="36" Column="74" />
+      <File FileName="Assets\Script\ItemSpawner&amp;Counter\Scripts\ArrowScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\ItemSpawner&amp;Counter\Scripts\ItemDurability.cs" Line="15" Column="46" />
+      <File FileName="Assets\Script\ItemSpawner&amp;Counter\Scripts\SwordPickUp.cs" Line="29" Column="72" />
+      <File FileName="Assets\Script\ItemSpawner&amp;Counter\Scripts\ItemSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\ItemSpawner&amp;Counter\Items\ArrowPickUp.cs" Line="28" Column="71" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
