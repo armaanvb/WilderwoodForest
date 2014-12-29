@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour {
 	public gunstate gunstate;
 	[HideInInspector]
 	public meleestate meleestate;
-	
 
 	private void Reset()
 	{
@@ -75,8 +74,28 @@ public class PlayerController : MonoBehaviour {
 		if(velocity.x != 0 || velocity.z != 0){animator.SetBool("isIdle", false);}
 		if(velocity.x == 0 && velocity.z == 0){animator.SetBool("isIdle", true);}
 	}
-	
 
+	public void moveForward() 
+	{
+		transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime * 5);
+	}
+
+	public void moveBack() 
+	{
+		transform.Translate(Vector3.back * movementSpeed * Time.deltaTime * 5);
+	}
+
+	public void moveRight() 
+	{
+		transform.Translate(Vector3.right * movementSpeed * Time.deltaTime * 5);
+	}
+
+	public void moveLeft() 
+	{
+		transform.Translate(Vector3.left * movementSpeed * Time.deltaTime * 5);
+	}
+	
+	
 	//The function in allows the system to enter different types of states(gunstate or melee state)
 	public void EnterState(State newState)
 	{

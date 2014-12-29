@@ -7688,7 +7688,8 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a787dd28d3494a346a20335084bd1d87, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: ab9ce5e720ef66e48b6ce04f8ef3dd3e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ab9ce5e720ef66e48b6ce04f8ef3dd3e, type: 2}
   m_RootGameObject: {fileID: 1978565521}
   m_IsPrefabParent: 0
@@ -10491,7 +10492,6 @@ GameObject:
   - 4: {fileID: 1978565526}
   - 23: {fileID: 1978565525}
   - 102: {fileID: 1978565524}
-  - 114: {fileID: 1978565523}
   - 65: {fileID: 1978565522}
   m_Layer: 0
   m_Name: MainMenu
@@ -10513,19 +10513,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 80.3000031, y: 10.1191406, z: 0}
   m_Center: {x: 40.1500015, y: -5.05957031, z: 0}
---- !u!114 &1978565523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ab9ce5e720ef66e48b6ce04f8ef3dd3e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1676071580}
-  m_GameObject: {fileID: 1978565521}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b000f5d14dce7ba478bd233b1c1fea71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsQuitButton: 0
 --- !u!102 &1978565524
 TextMesh:
   serializedVersion: 3

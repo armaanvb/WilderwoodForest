@@ -32,6 +32,7 @@ public class EnemyRoamingInvis : MonoBehaviour
 	//--------------------------------
 
 	public Transform spawnPoint;
+	public Canvas healthBar;
 
 	void Start () 
 	{
@@ -39,6 +40,7 @@ public class EnemyRoamingInvis : MonoBehaviour
 		spawnPoint = GetNearestTaggedNode();
 		InvokeRepeating("ScanForTarget", 0, scanFrequency );
 		transform.FindChild("Ghost").renderer.enabled = false;
+		healthBar.enabled = false;
 	}
 	
 
@@ -47,9 +49,10 @@ public class EnemyRoamingInvis : MonoBehaviour
 		Roam ();
 		Chase();
 
-		if(GameObject.Find("FlashlightTrigger").GetComponent<BoxCollider>().isTrigger == false)
+		if(GameObject.Find("FlashlightTrigger").GetComponent<BoxCollider>().enabled == false)
 		{
 			transform.FindChild("Ghost").renderer.enabled = false;
+			healthBar.enabled = false;
 		}
 	}
 
@@ -214,6 +217,7 @@ public class EnemyRoamingInvis : MonoBehaviour
 		if(other.tag == "FlashlightTrigger")
 		{
 			transform.FindChild("Ghost").renderer.enabled = true;
+			healthBar.enabled = true;
 			Color color = transform.FindChild("Ghost").renderer.material.color;
 			color.a = 0.5f;
 			transform.FindChild("Ghost").renderer.material.color = color;
@@ -225,6 +229,7 @@ public class EnemyRoamingInvis : MonoBehaviour
 		if(other.tag == "FlashlightTrigger")
 		{
 			transform.FindChild("Ghost").renderer.enabled = true;
+			healthBar.enabled = true;
 			Color color = transform.FindChild("Ghost").renderer.material.color;
 			color.a = 0.5f;
 			transform.FindChild("Ghost").renderer.material.color = color;
@@ -236,6 +241,7 @@ public class EnemyRoamingInvis : MonoBehaviour
 		if(other.tag == "FlashlightTrigger")
 		{
 			transform.FindChild("Ghost").renderer.enabled = false;
+			healthBar.enabled = false;
 		}
 	}
 

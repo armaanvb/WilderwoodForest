@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GuardRespawnNodes : MonoBehaviour 
 {
-	public GameObject guard;
+	//public GameObject guard;
 	public GameObject guardSpawn;
 	public bool isHere = true;
 	

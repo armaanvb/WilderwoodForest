@@ -5,6 +5,9 @@ var IsQuitButton = false;
 function Start()
 {
 	Time.timeScale = 1;
+	
+	Screen.showCursor = true;
+	Screen.lockCursor = false;
 }
 
 function OnMouseEnter()
@@ -17,7 +20,7 @@ function OnMouseExit()
 renderer.material.color = Color.white;
  }
 
-function OnMouseUp()
+function OnMouseDown()
 {
 if( IsQuitButton )
 {

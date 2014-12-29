@@ -113,4 +113,49 @@ public class PauseMenu : MonoBehaviour
 	{
 		Application.Quit();
 	}
+
+	public void PauseMobile()
+	{
+		if(Time.timeScale == 1)
+		{
+			(GameObject.Find("Player").GetComponent("MouseLook") as MonoBehaviour).enabled = false;
+			pauseCanvas.enabled = true;
+			Time.timeScale = 0;
+			Screen.lockCursor = false;
+			Screen.showCursor = true;
+			
+			if((GameObject.Find("Player").GetComponent("gunstate") as MonoBehaviour).enabled == true)
+			{
+				(GameObject.Find("Player").GetComponent("gunstate") as MonoBehaviour).enabled = false;
+				gunState = true;
+			}
+			
+			if((GameObject.Find("Player").GetComponent("meleestate") as MonoBehaviour).enabled == true)
+			{
+				(GameObject.Find("Player").GetComponent("meleestate") as MonoBehaviour).enabled = false;
+				meleeState = true;
+			}
+		}
+		else
+		{
+			(GameObject.Find("Player").GetComponent("MouseLook") as MonoBehaviour).enabled = true;
+			pauseCanvas.enabled = false;
+			optionsCanvas.enabled = false;
+			Time.timeScale = 1;
+			Screen.lockCursor = true;
+			Screen.showCursor = false;
+			
+			if(gunState)
+			{
+				(GameObject.Find("Player").GetComponent("gunstate") as MonoBehaviour).enabled = true;
+				gunState = false;
+			}
+			
+			if(meleeState)
+			{
+				(GameObject.Find("Player").GetComponent("meleestate") as MonoBehaviour).enabled = true;
+				meleeState = false;
+			}
+		}
+	}
 }

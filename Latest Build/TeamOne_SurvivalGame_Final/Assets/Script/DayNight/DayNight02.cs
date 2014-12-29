@@ -23,12 +23,6 @@ public class DayNight02 : MonoBehaviour
 	public bool isFog;
 	private bool isDay = true;
 
-	// Use this for initialization
-	void Start () 
-	{
-
-	}
-	
 	// Update is called once per frame
 	void Update () 
 	{
@@ -52,7 +46,7 @@ public class DayNight02 : MonoBehaviour
 			}
 			_light.intensity += Time.deltaTime * speed;
 			RenderSettings.fogDensity = 0.025f;
-			RenderSettings.fogColor = Color.Lerp(RenderSettings.fogColor, fogDay, Time.deltaTime*1);
+			RenderSettings.fogColor = Color.Lerp(RenderSettings.fogColor, fogDay, Time.deltaTime*0.1f);
 		}
 
 		if(timeDay >= 17  && timeDay <= 24)
@@ -65,7 +59,7 @@ public class DayNight02 : MonoBehaviour
 			}
 			_light.intensity += Time.deltaTime * (-speed) * 2f;
 			RenderSettings.fogDensity = 0.055f;
-			RenderSettings.fogColor = Color.Lerp(RenderSettings.fogColor, fogNight, Time.deltaTime*1);
+			RenderSettings.fogColor = Color.Lerp(RenderSettings.fogColor, fogNight, Time.deltaTime*0.1f);
 		}
 
 		if(isFog == true){RenderSettings.fog = true;}
